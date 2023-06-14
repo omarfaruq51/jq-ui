@@ -1,4 +1,14 @@
 $( function() {
+   //tooltip
+   $( document ).tooltip();
+  //  Menu
+  // $( "#menu" ).menu();
+});
+$( function() {
+  $( "#menu" ).menu();
+} );
+
+$( function() {
   $( "#accordion" ).accordion({
     heightStyle: "content"
   });
@@ -17,40 +27,47 @@ $( function() {
         $( "#accordion" ).accordion( "option", "icons", icons );
       }
     });
-  // autocomplite
-  var availableTags = [
-    "ActionScript",
-    "AppleScript",
-    "Asp",
-    "BASIC",
-    "C",
-    "C++",
-    "Clojure",
-    "COBOL",
-    "ColdFusion",
-    "Erlang",
-    "Fortran",
-    "Groovy",
-    "Haskell",
-    "Java",
-    "JavaScript",
-    "Lisp",
-    "Perl",
-    "PHP",
-    "Python",
-    "Ruby",
-    "Scala",
-    "Scheme"
-  ];
-  $( "#tags" ).autocomplete({
-    source: availableTags
-  });
-  //datepeaker
+} );
+
+$( function() {
+ // autocomplite
+ var availableTags = [
+  "ActionScript",
+  "AppleScript",
+  "Asp",
+  "BASIC",
+  "C",
+  "C++",
+  "Clojure",
+  "COBOL",
+  "ColdFusion",
+  "Erlang",
+  "Fortran",
+  "Groovy",
+  "Haskell",
+  "Java",
+  "JavaScript",
+  "Lisp",
+  "Perl",
+  "PHP",
+  "Python",
+  "Ruby",
+  "Scala",
+  "Scheme"
+];
+$( "#tags" ).autocomplete({
+  source: availableTags
+});
+} );
+$( function() {
   $( "#datepicker" ).datepicker();
-  //draggable
+} );
+$( function() {
   $( "#draggable" ).draggable(
     { axis: "y" }
   );
+} );
+$( function() {
   //sortable
   $( "#sortable" ).sortable();
   $( "#sortable" ).disableSelection();
@@ -58,34 +75,8 @@ $( function() {
   $( "#tabs" ).tabs();
   $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
   $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
-   //tooltip
-   $( document ).tooltip();
-  //  Menu
-  // $( "#menu" ).menu();
-});
-$( function() {
-  $( "#menu" ).menu();
 } );
 
-// $( function() {
-//   var state = true;
-//   $( "#button" ).on( "click", function() {
-//     if ( state ) {
-//       $( "#effect" ).animate({
-//         backgroundColor: "#aa0000",
-//         color: "#fff",
-//         width: 500
-//       }, 1000 );
-//     } else {
-//       $( "#effect" ).animate({
-//         backgroundColor: "#fff",
-//         color: "#000",
-//         width: 240
-//       }, 1000 );
-//     }
-//     state = !state;
-//   });
-// } );
 
 $( function() {
   // run the currently selected effect
